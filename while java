@@ -1,0 +1,48 @@
+
+package proyecto;
+
+import java.util.Scanner;
+
+public class Proyecto {
+
+    public static void main(String[] args) {
+        
+        byte opcion = 0;        
+        //declaramos el objeto Scaner
+        Scanner lectura= new Scanner (System.in);        
+        do { // hacer como minimo una vez.
+            System.out.println("1. Mostrar 100 numeros con un bucle for");
+            System.out.println("2. Mostrar 100 numeros con un bucle while");
+            System.out.println("3. ¿cual es el numero?");
+            System.out.println("4. Introduce un numero. ¿Es mayor que cero?");
+            System.out.println("5. Salir");            
+            { // Mostrarnos un mensaje por pantalla
+                System.out.println("inroduce un numero: ");               
+                // Lo leemos y lo guardamos en la variable.
+                opcion = lectura.nextByte();                
+                // y mientras el numero sea menor que 1 o mayor que 5                             
+            } while (opcion<1 || opcion> 5);          
+            //Dependiendo lo que el usuario introduzca 
+            //ejecutamos una opcion u otra 
+            swith(opcion);
+            case 1:
+                 System.out.println("Opcion uno ejecutada");
+                 break;
+            case 2:
+                 System.out.println("opcion 2 ejecutada");
+                 break;
+            case 3:
+                 System.out.println("opcion 3 ejecutada");
+                 break;
+            case 4:
+                 System.out.println("opcion 4 ejecutada");
+                 break;
+            case 5:
+                 System.out.println("opcion 5 ejecutada");
+                 break;                 
+            {                
+        }
+        
+        
+    
+
